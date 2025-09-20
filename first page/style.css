@@ -1,0 +1,18 @@
+body{ 
+    background-color: rgb(86, 106, 150);
+    text-align: center;
+    font-family: helvetica;
+    
+}
+h1{
+    font-family: cursive;
+}
+mark {
+    background-color: rgb(78, 143, 241);
+    color: rgb(12, 7, 7);
+  }
+img {
+border: 10px solid rgb(28, 44, 88)
+}
+
+

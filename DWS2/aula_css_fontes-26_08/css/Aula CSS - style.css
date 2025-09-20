@@ -1,0 +1,70 @@
+/* --- BOAS PRÁTICAS PRIMEIRO! ---
+*/
+
+/* 1. Importando uma fonte customizada do Google Fonts no topo do arquivo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* 2. A regra do 'border-box'. Isso faz com que o padding e a borda 
+     sejam incluídos no cálculo total da largura (width) e altura (height) do elemento.
+     Facilita MUITO a criação de layouts.
+*/
+* {
+  box-sizing: border-box;
+  margin: 0; /* Remove todas as margens padrão do navegador */
+  padding: 0; /* Remove todos os paddings padrão do navegador */
+}
+
+
+/* --- ESTILOS GERAIS DO CORPO DA PÁGINA ---
+*/
+body {
+  /* Usando a fonte que importamos! Se 'Poppins' falhar, o navegador usará uma fonte sans-serif padrão. */
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5; /* Um cinza bem claro para o fundo */
+  color: #333; /* Cor do texto principal (cinza escuro) */
+}
+
+
+/* --- ESTILOS DO CABEÇALHO ---
+*/
+.cabecalho {
+  background-color: #4a90e2; /* Um azul vibrante */
+  color: white; /* Cor do texto branca */
+  padding: 20px; /* Espaçamento interno de 20px em todos os lados */
+  text-align: center; /* Centraliza o texto */
+}
+
+
+/* --- ESTILOS DO CONTAINER PRINCIPAL ---
+  Este container vai centralizar nosso conteúdo na página.
+*/
+.container {
+  max-width: 800px; /* Largura máxima do container */
+  margin: 40px auto; /* 40px de margem em cima/baixo e 'auto' dos lados para centralizar */
+  padding: 20px; /* Um padding para o conteúdo não colar nas bordas em telas pequenas */
+}
+
+
+/* --- ESTILOS DOS CARDS ---
+  Esta é a parte principal onde aplicamos o Box Model.
+*/
+.card {
+  background-color: #ffffff; /* Fundo branco */
+  border: 1px solid #dddddd; /* Borda fina e cinza claro */
+  border-radius: 8px; /* Deixa as bordas arredondadas, um toque moderno */
+  
+  /* BOX MODEL EM AÇÃO: */
+  padding: 25px; /* 25px de espaçamento INTERNO (entre a borda e o conteúdo) */
+  margin-top: 20px; /* 20px de espaçamento EXTERNO na parte de CIMA do card */
+}
+
+/* Estilizando o título dentro do card */
+.card h2 {
+  margin-bottom: 15px; /* Adiciona um espaço abaixo do título do card */
+  color: #4a90e2; /* Usa o mesmo azul do cabeçalho para consistência */
+}
+
+/* Estilizando o parágrafo dentro do card */
+.card p {
+  line-height: 1.6; /* Aumenta a altura da linha para uma melhor legibilidade */
+}

@@ -1,0 +1,79 @@
+/*estilos básicos para centralizar a bandeira na página */
+body{
+    font-family:  sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/*------código da bandeira-----*/
+.bandeira{
+    background-color: #009c3b;
+    width: 700px;
+    height: 490px;
+    position: relative;
+    /*adicionamos overflow: hidden para garantir que nada "vaze" para fora da bandeira, 
+    especialmente durante a rotação da fixa */
+    overflow: hidden;
+}
+/*----losango amarelo criado com clip-path----*/
+.bandeira::before{
+    content: '';
+    display: block;
+    background-color: #ffdf00;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(
+        50% 8.5%,/*Ponto 1: O vértice de CIMA*/
+        91.5% 50%, /*Ponto 2: O vértice da DIREITA*/
+        50% 91.5%, /*Ponto 3: O vértice de BAIXO*/
+        8.5% 50% /*Ponto 4: O vértice da ESQUERDA*/
+    );
+}
+.circulo{
+    background-color: #002776;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*O overflow hided no círculo0 é crucial para que a faixa pareça estar "dentro" dele*/
+    overflow: hidden;
+}
+
+/*usamos o pseudo-elemento ::after do circulo para criar a faixa*/
+.circulo::after{
+    content: 'ORDEM E PROGRESSO'; /*texto que aparecerá na faixa*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*cor e fonte de texto*/
+    color: #009c3b; /*bandeira oficial*/
+    font-size: 20px; /*tamanho da fonte*/
+    font-weight: bold;
+    font-family: arial, sans-serif; /*Uma fonte limpa*/
+
+    /*dimensões e cor da faixa*/
+    background-color: white;
+    width: 110%; /*ligeiramente maior que o círculo para garantir que as bordas não apareçam*/
+    height: 60px; /*a "espessura" da faixa*/
+
+    /*posicionamento e rotação*/
+    position: absolute;
+    top: 50%;
+    left: -5%; /*Começa um pouco para a esquerda para centralizar após a rotação */
+
+    /*A mágica da inclinação: rotacionamos a faixa em -20graus*/
+    transform: translateY(-50%) rotate(-20deg);
+}

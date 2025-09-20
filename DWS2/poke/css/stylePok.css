@@ -1,0 +1,69 @@
+.bolinha{
+    width: 50px; /* Largura */
+    height: 50px; /* Altura */
+    background-color: rgb(116, 78, 220); /* Cor de fundo */
+    border-radius: 50%; /* Para tornar o quadrado um círculo */
+    position: relative; /* Necessário para animar a posição */
+    top: 10px;
+    left: 10px;
+    animation: mover-bola 4s infinite alternate; /* Nome, duração, repetição e direção */
+
+  }
+
+  @keyframes mover-bola {
+    0% {
+      /* Posição inicial */
+      top: 10px;
+      left: 10px;
+    }
+    50% {
+      /* Ponto final horizontal */
+      top: 10px;
+      left: 200px;
+    }
+    100% {
+      /* Ponto final vertical (abaixo) */
+      top: 150px; /* Desce para uma nova posição */
+      left: 200px;
+    }
+  }
+
+
+
+  .bolinha2{
+    width: 50px; /* Largura */
+    height: 50px; /* Altura */
+    background-color: rgb(25, 0, 255); /* Cor de fundo */
+    border-radius: 50%; /* Para tornar o quadrado um círculo */
+    position: relative; /* Necessário para animar a posição */
+    top: 10px;
+    left: 200px;
+  }
+
+  @keyframes mover-bola2 {
+    0% {
+      /* Posição inicial */
+      top: 10px;
+      left: 10px;
+    }
+    50% {
+      /* Ponto final horizontal */
+      top: 10px;
+      left: 150px;
+    }
+    100% {
+      /* Ponto final vertical (abaixo) */
+      top: 150px; /* Desce para uma nova posição */
+      left: 200px;
+    }
+  }
+  .bolinha2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(17, 0, 255);
+    border-radius: 50%;
+    position: relative;
+    animation: mover-bola2 4s infinite alternate; /* Nome, duração, repetição e direção */
+
+
+  }

@@ -1,0 +1,55 @@
+.pokebola {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid black;
+    background: linear-gradient(to bottom, #EE1515 50%, #f0f0f0 50%);
+    position: relative;
+    animation: mover-pokebola 2s linear infinite alternate;
+    /* Nome, duração, repetição e direção */
+    transform: rotate(3.142rad);
+}
+
+/* linear-gradient(to right, red 50%, blue 50%) criará uma divisão exata, com a cor vermelha ocupando os primeiros 50% e o azul os 50% finais */
+
+
+.linha {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border: 10px;
+    margin-top: 50%;
+    background-color: black;
+}
+
+.botao-externo {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 5px solid black;
+    margin-top: 35%;
+    margin-left: 32%;
+}
+
+.botao-interno {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-top: 17%;
+    margin-left: 17%;
+}
+
+
+@keyframes mover-pokebola {
+
+    100% {
+        transform: rotate(360deg);
+        /* Posição inicial */
+        transform: translate(100vw);
+        /* Posição final */
+    }
+}
+/*transform: translateX(180px) rotate(45deg);*/
