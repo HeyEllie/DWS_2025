@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquete de Satisfação</title>
+    <link rel="stylesheet" href="css/stylee.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sua Opinião é Importante!</h2>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Você recomendaria nosso site?</legend>
+                <div class="radio-opcao">
+                    <input type="radio" id="rec-sim" name="recomendaria" value="sim">
+                    <label for="rec-sim">Sim</label>
+                </div>
+                <div class="radio-opcao">
+                    <input type="radio" id="rec-nao" name="recomendaria" value="nao">
+                    <label for="rec-nao">Não</label>
+                </div>
+            </fieldset>
+            <div class="campo_form">
+                <label for="secao-favorita">Qual sua seção favorita?</label>
+                <select id="secao-favorita" name="secao_favorita">
+                    <option value="">Selecione uma opção...</option>
+                    <option value="home">Página Inicial</option>
+                    <option value="produtos">Produtos</option>
+                    <option value="contato">Contato</option>
+                </select>
+            </div>
+            <div class="campo_form">
+                <button type="button" onclick="agradecer()">Enviar Opinião</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

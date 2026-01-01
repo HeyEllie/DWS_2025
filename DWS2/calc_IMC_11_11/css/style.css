@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.campo-form {
+    margin-bottom: 20px;
+}
+
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.campo-form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.resultado-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.resultado-base {
+    font-size: 16px;
+    color: #7f8c8d;
+    font-style: italic;
+    transition: all 0.3s;
+}
+
+/* TAREFA 2: Você deve adicionar as classes de resultado
+    (.resultado-bom, .resultado-atencao, .resultado-cuidado) aqui.
+   */
+/* Classe para "Peso Normal" */
+#resultado {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Classe para "Peso Normal" */
+.resultado-bom {
+    background-color: green;
+    color: green;
+    /* Verde */
+    Fonte em negrito Estilo da fonte normal
+}
+
+/* Classe para "Abaixo do Peso" e "Sobrepeso" */
+.resultado-atencao {
+    Inserir a cor
+    /* Laranja */
+    Fonte em negrito Estilo da fonte normal
+}
+
+/* Classe para "Obesidade" e erros */
+.resultado-cuidado {
+    background-color: red;
+    color: black:
+    /* Vermelho */
+    font: bold;
+}

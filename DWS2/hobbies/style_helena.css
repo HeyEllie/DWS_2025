@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+    background-color: rgb(145, 92, 49);
+}
+
+.cartao{
+    overflow: hidden;
+    max-width: 400px;
+    border: 10px solid black;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    margin-left: 30% ;
+    height: 530px;
+    border-radius: 20px;
+    background-color:rgb(212, 158, 97);
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(53, 29, 2, 0.2), 0 6px 20px 0 rgba(53, 29, 2, 0.2);  
+}
+
+button{
+    overflow: hidden;
+    background-color: rgb(247, 175, 127);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(129, 92, 22);
+    left: -50px;
+}
+a{
+    color: rgb(39, 24, 10);
+    font-size: 15px;
+}
+button:hover{
+    background-color: rgb(182, 120, 70);
+}
+
+.container{
+    text-align: center;
+    display: flex; 
+  justify-content: center;
+}
+
+.cartao2{
+    overflow: hidden;
+    border: 5px solid black;
+    margin-left: 30% ;
+    height: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    background-color: rgb(146, 146, 68);
+    margin-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(53, 29, 2, 0.2), 0 6px 20px 0 rgba(53, 29, 2, 0.2);  
+    max-width: 400px;
+}
+img{
+    box-shadow: 0 4px 8px 0 rgba(53, 29, 2, 0.2), 0 6px 20px 0 rgba(53, 29, 2, 0.2);  
+
+}

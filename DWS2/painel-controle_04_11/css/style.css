@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    /* Fundo escuro */
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1f2a40;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #a6c1ff;
+    margin-bottom: 25px;
+}
+
+/* --- Este é o "Display" que o JS vai manipular --- */
+#status-display {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 2px solid;
+    /* A cor da borda virá das classes abaixo */
+    transition: all 0.3s ease;
+    /* Efeito suave na mudança de cor */
+}
+
+/* --- Nossas 3 classes de ESTILO --- */
+.display-neutro {
+    background-color: #4a4a6a;
+    color: #d1d1d1;
+    border-color: #8c8ca0;
+}
+
+.display-permitido {
+    background-color: #1e4620;
+    /* Fundo verde escuro */
+    color: #a6ffb0;
+    /* Texto verde claro */
+    border-color: #38c172;
+    /* Borda verde */
+}
+
+.display-negado {
+    background-color: #4c1d1d;
+    /* Fundo vermelho escuro */
+    color: #ffbaba;
+    /* Texto vermelho claro */
+    border-color: #e3342f;
+    /* Borda vermelha */
+}
+
+/* --- Os Botões --- */
+.botoes {
+    display: flex;
+    /* Coloca os botões lado a lado */
+    justify-content: space-between;
+    /* Espaça eles igualmente */
+    gap: 10px;
+    /* Espaço entre os botões */
+}
+
+button {
+    flex: 1;
+    /* Faz os botões dividirem o espaço */
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#btn-permitir {
+    background-color: #38c172;
+    color: #133d15;
+}
+
+#btn-permitir:hover {
+    background-color: #55dd8c;
+}
+
+#btn-negar {
+    background-color: #e3342f;
+    color: #4c1d1d;
+}
+
+#btn-negar:hover {
+    background-color: #ff5e5a;
+}
+
+#btn-resetar {
+    background-color: #8c8ca0;
+    color: #1f2a40;
+}
+
+#btn-resetar:hover {
+    background-color: #b0b0c0;
+}

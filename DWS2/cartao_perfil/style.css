@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color:rgb(183, 213, 240);
+}
+h1{
+    margin-left: 22px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+h3{
+    margin-left: 50px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(11, 0, 107);
+}
+
+p{
+    margin-left: 55px;
+    color: rgb(2, 27, 83);
+    font-family: "Poppins", sans-serif;
+}
+
+
+img{
+    margin-left: 65px;
+    border-radius: 50%;
+    border:  5px solid rgb(11, 11, 148) ;
+}
+
+.everything{
+    top: 40px;
+    left: 68px;
+    position: absolute;
+}
+
+.cartao{
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    margin-left: 30% ;
+    width: 70vh;
+    height: 90vh;
+    border-radius: 20px;
+    background-color:rgb(223, 235, 247);
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+.habilidades{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 5px 7px; /* Sets a 10px gap between rows and a 30px gap between columns */
+    margin-right: -20px;
+}
+
+#html, #css, #javascript, #react{
+    border-radius: 50px;
+    padding: 8px;
+    margin: 0px 5px;
+    font-size: 18px;
+}
+
+button{
+    background-color: blue;
+    width: 60vh;
+    height: 10vh ;
+    margin: 20px -20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: rgb(5, 5, 214);
+}

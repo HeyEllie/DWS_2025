@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Semana de Tecnologia e Arte</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container-form">
+        <h1>Inscrição - Semana de Tecnologia e Arte</h1>
+        <p>Preencha o formulário abaixo para garantir sua vaga.</p>
+
+        <form action="#" method="POST">
+            
+            <div class="campo-form">
+                <label for="nome_completo">Nome completo:</label>
+                <input type="text" id="nome_completo" name="nome_completo" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="email_contato">E-mail de contato:</label>
+                <input type="email" id="email_contato" name="email_contato" required>
+            </div>
+
+            <fieldset>
+                <legend>Qual turno você prefere?</legend>
+                <div class="radio-opcao">
+                    <input type="radio" id="turno_manha" name="turno" value="manha" required>
+                    <label for="turno_manha">Manhã</label>
+                </div>
+                <div class="radio-opcao">
+                    <input type="radio" id="turno_tarde" name="turno" value="tarde">
+                    <label for="turno_tarde">Tarde</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quais palestras você tem interesse?</legend>
+                <div class="check-opcao">
+                    <input type="checkbox" id="interesse_robotica" name="interesse_robotica" value="robotica">
+                    <label for="interesse_robotica">Robótica</label>
+                </div>
+                <div class="check-opcao">
+                    <input type="checkbox" id="interesse_ia" name="interesse_ia" value="ia">
+                    <label for="interesse_ia">Inteligência artificial</label>
+                </div>
+                <div class="check-opcao">
+                    <input type="checkbox" id="interesse_arte" name="interesse_arte" value="arte_digital">
+                    <label for="interesse_arte">Arte digital</label>
+                </div>
+            </fieldset>
+
+            <div class="campo-form">
+                <label for="nivel_conhecimento">Seu nível de conhecimento em programação:</label>
+                <select id="nivel_conhecimento" name="nivel_conhecimento">
+                    <option value="">Selecione seu nível...</option>
+                    <option value="iniciante">Iniciante</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="avancado">Avançado</option>
+                    <option value="expert">Expert (deus daprogramação)</option>
+                </select>
+            </div>
+
+            <div class="campo-form">
+                <label for="sugestoes">Dúvidas? Sugestões?</label>
+                <textarea id="sugestoes" name="sugestoes" rows="4" placeholder="Opcional..."></textarea>
+            </div>
+
+            <div class="botoes-container">
+                <button type="submit" class="btn-principal">Finalizar Inscrição</button>
+                <button type="button" class="btn-secundario" onclick="cancelar()">Cancelar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
